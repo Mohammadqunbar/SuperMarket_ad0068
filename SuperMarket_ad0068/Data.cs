@@ -32,6 +32,7 @@ namespace SuperMarket_ad0068
             con.Close();
             MessageBox.Show("Saved is successfully");
             GetSuperMarket();
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
