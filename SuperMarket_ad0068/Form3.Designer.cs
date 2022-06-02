@@ -32,25 +32,22 @@ namespace SuperMarket_ad0068
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDairy));
             this.lblQuantity = new System.Windows.Forms.Label();
             this.cmbQuantity = new System.Windows.Forms.ComboBox();
-            this.grbthelist = new System.Windows.Forms.GroupBox();
-            this.chbcheese = new System.Windows.Forms.CheckBox();
-            this.chbyogurt = new System.Windows.Forms.CheckBox();
-            this.chbmilk = new System.Windows.Forms.CheckBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.disableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnclear = new System.Windows.Forms.Button();
-            this.grbthelist.SuspendLayout();
+            this.lbxSelection4 = new System.Windows.Forms.CheckedListBox();
+            this.aDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(223, 66);
+            this.lblQuantity.Location = new System.Drawing.Point(191, 57);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(53, 15);
+            this.lblQuantity.Size = new System.Drawing.Size(46, 13);
             this.lblQuantity.TabIndex = 7;
             this.lblQuantity.Text = "Quantity";
             // 
@@ -68,52 +65,10 @@ namespace SuperMarket_ad0068
             "8",
             "9",
             "10"});
-            this.cmbQuantity.Location = new System.Drawing.Point(233, 87);
+            this.cmbQuantity.Location = new System.Drawing.Point(200, 75);
             this.cmbQuantity.Name = "cmbQuantity";
-            this.cmbQuantity.Size = new System.Drawing.Size(43, 23);
+            this.cmbQuantity.Size = new System.Drawing.Size(37, 21);
             this.cmbQuantity.TabIndex = 6;
-            // 
-            // grbthelist
-            // 
-            this.grbthelist.Controls.Add(this.chbcheese);
-            this.grbthelist.Controls.Add(this.chbyogurt);
-            this.grbthelist.Controls.Add(this.chbmilk);
-            this.grbthelist.Location = new System.Drawing.Point(20, 40);
-            this.grbthelist.Name = "grbthelist";
-            this.grbthelist.Size = new System.Drawing.Size(126, 137);
-            this.grbthelist.TabIndex = 5;
-            this.grbthelist.TabStop = false;
-            this.grbthelist.Text = "The List";
-            // 
-            // chbcheese
-            // 
-            this.chbcheese.AutoSize = true;
-            this.chbcheese.Location = new System.Drawing.Point(17, 76);
-            this.chbcheese.Name = "chbcheese";
-            this.chbcheese.Size = new System.Drawing.Size(64, 19);
-            this.chbcheese.TabIndex = 2;
-            this.chbcheese.Text = "Cheese";
-            this.chbcheese.UseVisualStyleBackColor = true;
-            // 
-            // chbyogurt
-            // 
-            this.chbyogurt.AutoSize = true;
-            this.chbyogurt.Location = new System.Drawing.Point(17, 51);
-            this.chbyogurt.Name = "chbyogurt";
-            this.chbyogurt.Size = new System.Drawing.Size(61, 19);
-            this.chbyogurt.TabIndex = 1;
-            this.chbyogurt.Text = "Yogurt";
-            this.chbyogurt.UseVisualStyleBackColor = true;
-            // 
-            // chbmilk
-            // 
-            this.chbmilk.AutoSize = true;
-            this.chbmilk.Location = new System.Drawing.Point(17, 26);
-            this.chbmilk.Name = "chbmilk";
-            this.chbmilk.Size = new System.Drawing.Size(49, 19);
-            this.chbmilk.TabIndex = 0;
-            this.chbmilk.Text = "Milk";
-            this.chbmilk.UseVisualStyleBackColor = true;
             // 
             // toolStrip1
             // 
@@ -121,7 +76,7 @@ namespace SuperMarket_ad0068
             this.toolStripSplitButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(326, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(279, 25);
             this.toolStrip1.TabIndex = 11;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -130,6 +85,7 @@ namespace SuperMarket_ad0068
             this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripSplitButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.disableToolStripMenuItem,
+            this.aDDToolStripMenuItem,
             this.clearOrderToolStripMenuItem});
             this.toolStripSplitButton1.ForeColor = System.Drawing.Color.Black;
             this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
@@ -154,29 +110,42 @@ namespace SuperMarket_ad0068
             // 
             // btnclear
             // 
-            this.btnclear.Location = new System.Drawing.Point(110, 215);
+            this.btnclear.Location = new System.Drawing.Point(94, 186);
             this.btnclear.Name = "btnclear";
-            this.btnclear.Size = new System.Drawing.Size(108, 49);
+            this.btnclear.Size = new System.Drawing.Size(93, 42);
             this.btnclear.TabIndex = 12;
             this.btnclear.Text = "Clear";
             this.btnclear.UseVisualStyleBackColor = true;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
+            // lbxSelection4
+            // 
+            this.lbxSelection4.FormattingEnabled = true;
+            this.lbxSelection4.Location = new System.Drawing.Point(12, 38);
+            this.lbxSelection4.Name = "lbxSelection4";
+            this.lbxSelection4.Size = new System.Drawing.Size(124, 94);
+            this.lbxSelection4.TabIndex = 13;
+            // 
+            // aDDToolStripMenuItem
+            // 
+            this.aDDToolStripMenuItem.Name = "aDDToolStripMenuItem";
+            this.aDDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aDDToolStripMenuItem.Text = "ADD";
+            this.aDDToolStripMenuItem.Click += new System.EventHandler(this.aDDToolStripMenuItem_Click);
+            // 
             // frmDairy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(326, 313);
+            this.ClientSize = new System.Drawing.Size(279, 271);
+            this.Controls.Add(this.lbxSelection4);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.cmbQuantity);
-            this.Controls.Add(this.grbthelist);
             this.Name = "frmDairy";
             this.Text = "Dairy Products";
-            this.grbthelist.ResumeLayout(false);
-            this.grbthelist.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -187,14 +156,12 @@ namespace SuperMarket_ad0068
         #endregion
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.ComboBox cmbQuantity;
-        private System.Windows.Forms.GroupBox grbthelist;
-        private System.Windows.Forms.CheckBox chbcheese;
-        private System.Windows.Forms.CheckBox chbyogurt;
-        private System.Windows.Forms.CheckBox chbmilk;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
         private System.Windows.Forms.ToolStripMenuItem disableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearOrderToolStripMenuItem;
         private System.Windows.Forms.Button btnclear;
+        private System.Windows.Forms.CheckedListBox lbxSelection4;
+        private System.Windows.Forms.ToolStripMenuItem aDDToolStripMenuItem;
     }
 }

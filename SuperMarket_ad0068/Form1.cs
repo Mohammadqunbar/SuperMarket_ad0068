@@ -5,15 +5,17 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace SuperMarket_ad0068
 {
     public partial class frmCooking : Form
     {
-        private string disable;
+
         public frmCooking()
         {
             InitializeComponent();
+            fill_ListBox();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,27 +25,8 @@ namespace SuperMarket_ad0068
 
         private void disableToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.chbrice.Checked)
-            {
-                disable += chbrice.Text;
-                disable += "\n";
-            }
-            if (this.chbnoodles.Checked)
-            {
-                disable += chbnoodles.Text;
-                disable += "\n";
-            }
-            if (this.chbSpices.Checked)
-            {
-                disable += chbSpices.Text;
-                disable += "\n";
-            }
-            if (this.chbcannedfood.Checked)
-            {
-                disable += chbcannedfood.Text;
-                disable += "\n";
-            }
-            MessageBox.Show("Order : \n" + disable + "Quantity : \n" + cmbQuantity.SelectedItem);
+            
+            MessageBox.Show("Order : \n" + lbxSelection4.Text + " \n Quantity : \n" + cmbQuantity.SelectedItem);
             
         }
 
@@ -52,13 +35,43 @@ namespace SuperMarket_ad0068
             Close();
         }
 
-        private void btnclear_Click(object sender, EventArgs e)
+
+        string database = "Provider=Microsoft.ACE.OLEDB.12.0; " +
+                "Data Source =C:\\Users\\SCHOOL\\Desktop\\mohammed alqunbor\\SuperMarket_ad0068\\SuperMarket_ad0068\\database\\SuperMarket_ad0068.accdb";
+        void fill_ListBox()
+        {
+            try
+            {
+
+                OleDbConnection con = new OleDbConnection(database);
+                con.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = con;
+                string selection = "Select Cooking_and_Baking from Cooking_and_Baking";
+                command.CommandText = selection;
+                OleDbDataReader myReader = command.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    lbxSelection4.Items.Add(myReader["Cooking_and_Baking"].ToString());
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error  " + ex);
+            }
+        }
+        private void btnclear_Click_1(object sender, EventArgs e)
         {
             cmbQuantity.SelectedIndex = 0;
-            chbrice.Checked = false;
-            chbnoodles.Checked = false;
-            chbSpices.Checked = false;
-            chbcannedfood.Checked = false;
+            lbxSelection4.ClearSelected();
+        }
+
+        private void aDDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addform1 frm1 = new addform1();
+            frm1.Show();
         }
     }
 }

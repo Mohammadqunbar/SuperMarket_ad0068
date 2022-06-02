@@ -48,12 +48,6 @@ namespace SuperMarket_ad0068
             lblWel.Text = "Welcome " + Username;
         }
 
-        private void btndata_Click(object sender, EventArgs e)
-        {
-            frmData frmdata = new frmData();
-            frmdata.TopLevel = false;
-            this.panel3.Controls.Add(frmdata);
-            frmdata.Show();
-        }
+
     }
 }

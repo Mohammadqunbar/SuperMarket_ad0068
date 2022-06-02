@@ -36,7 +36,6 @@ namespace SuperMarket_ad0068
             this.btnCleaning = new System.Windows.Forms.Button();
             this.btnCooking = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btndata = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +62,6 @@ namespace SuperMarket_ad0068
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(118)))), ((int)(((byte)(84)))));
-            this.panel2.Controls.Add(this.btndata);
             this.panel2.Controls.Add(this.btnDairy);
             this.panel2.Controls.Add(this.btnCleaning);
             this.panel2.Controls.Add(this.btnCooking);
@@ -77,7 +75,7 @@ namespace SuperMarket_ad0068
             // 
             this.btnDairy.Location = new System.Drawing.Point(33, 128);
             this.btnDairy.Name = "btnDairy";
-            this.btnDairy.Size = new System.Drawing.Size(64, 34);
+            this.btnDairy.Size = new System.Drawing.Size(79, 34);
             this.btnDairy.TabIndex = 2;
             this.btnDairy.Text = "Dairy Products";
             this.btnDairy.UseVisualStyleBackColor = true;
@@ -87,7 +85,7 @@ namespace SuperMarket_ad0068
             // 
             this.btnCleaning.Location = new System.Drawing.Point(33, 76);
             this.btnCleaning.Name = "btnCleaning";
-            this.btnCleaning.Size = new System.Drawing.Size(64, 34);
+            this.btnCleaning.Size = new System.Drawing.Size(79, 34);
             this.btnCleaning.TabIndex = 1;
             this.btnCleaning.Text = " Cleaning Materials";
             this.btnCleaning.UseVisualStyleBackColor = true;
@@ -97,7 +95,7 @@ namespace SuperMarket_ad0068
             // 
             this.btnCooking.Location = new System.Drawing.Point(33, 23);
             this.btnCooking.Name = "btnCooking";
-            this.btnCooking.Size = new System.Drawing.Size(64, 34);
+            this.btnCooking.Size = new System.Drawing.Size(79, 34);
             this.btnCooking.TabIndex = 0;
             this.btnCooking.Text = "Cooking and Baking";
             this.btnCooking.UseVisualStyleBackColor = true;
@@ -111,16 +109,6 @@ namespace SuperMarket_ad0068
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(266, 239);
             this.panel3.TabIndex = 2;
-            // 
-            // btndata
-            // 
-            this.btndata.Location = new System.Drawing.Point(33, 180);
-            this.btndata.Name = "btndata";
-            this.btndata.Size = new System.Drawing.Size(64, 34);
-            this.btndata.TabIndex = 3;
-            this.btndata.Text = "DataBase";
-            this.btndata.UseVisualStyleBackColor = true;
-            this.btndata.Click += new System.EventHandler(this.btndata_Click);
             // 
             // frmLogin
             // 
@@ -149,6 +137,5 @@ namespace SuperMarket_ad0068
         private System.Windows.Forms.Button btnCooking;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblWel;
-        private System.Windows.Forms.Button btndata;
     }
 }
