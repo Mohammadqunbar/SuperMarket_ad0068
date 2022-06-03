@@ -117,7 +117,7 @@
     <Compile Include="SuperMarket.Designer.cs">
       <DependentUpon>SuperMarket.cs</DependentUpon>
     </Compile>
-    <Compile Include="database\SuperMarket_ad0068DataSet.Designer.cs">
+    <Compile Include="SuperMarket_ad0068DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SuperMarket_ad0068DataSet.xsd</DependentUpon>
@@ -164,23 +164,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="database\SuperMarket_ad0068DataSet.xsc">
+    <None Include="SuperMarket_ad0068DataSet.xsc">
       <DependentUpon>SuperMarket_ad0068DataSet.xsd</DependentUpon>
     </None>
-    <None Include="database\SuperMarket_ad0068DataSet.xsd">
+    <None Include="SuperMarket_ad0068DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>SuperMarket_ad0068DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="database\SuperMarket_ad0068DataSet.xss">
+    <None Include="SuperMarket_ad0068DataSet.xss">
       <DependentUpon>SuperMarket_ad0068DataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="database\SuperMarket_ad0068.accdb">
+    <Content Include="SuperMarket_ad0068.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

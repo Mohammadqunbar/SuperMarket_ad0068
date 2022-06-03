@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace SuperMarket_ad0068.database {
+namespace SuperMarket_ad0068 {
     
     
     /// <summary>
@@ -1437,7 +1437,7 @@ namespace SuperMarket_ad0068.database {
         }
     }
 }
-namespace SuperMarket_ad0068.database.SuperMarket_ad0068DataSetTableAdapters {
+namespace SuperMarket_ad0068.SuperMarket_ad0068DataSetTableAdapters {
     
     
     /// <summary>
@@ -1592,7 +1592,7 @@ namespace SuperMarket_ad0068.database.SuperMarket_ad0068DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::SuperMarket_ad0068.Properties.Settings.Default.SuperMarket_ad0068ConnectionString1;
+            this._connection.ConnectionString = global::SuperMarket_ad0068.Properties.Settings.Default.SuperMarket_ad0068ConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1904,7 +1904,7 @@ namespace SuperMarket_ad0068.database.SuperMarket_ad0068DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::SuperMarket_ad0068.Properties.Settings.Default.SuperMarket_ad0068ConnectionString1;
+            this._connection.ConnectionString = global::SuperMarket_ad0068.Properties.Settings.Default.SuperMarket_ad0068ConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2216,7 +2216,7 @@ namespace SuperMarket_ad0068.database.SuperMarket_ad0068DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::SuperMarket_ad0068.Properties.Settings.Default.SuperMarket_ad0068ConnectionString1;
+            this._connection.ConnectionString = global::SuperMarket_ad0068.Properties.Settings.Default.SuperMarket_ad0068ConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

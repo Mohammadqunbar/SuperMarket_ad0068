@@ -44,5 +44,16 @@ namespace SuperMarket_ad0068.Properties {
                 return ((string)(this["SuperMarket_ad0068ConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\SuperMarket_ad0068." +
+            "accdb")]
+        public string SuperMarket_ad0068ConnectionString2 {
+            get {
+                return ((string)(this["SuperMarket_ad0068ConnectionString2"]));
+            }
+        }
     }
 }

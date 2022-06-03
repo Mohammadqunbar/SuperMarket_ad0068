@@ -4,12 +4,12 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SuperMarket_ad0068ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SuperMarket_ad0068ConnectionString1 (Settings)" PropertyReference="ApplicationSettings.SuperMarket_ad0068.Properties.Settings.GlobalReference.Default.SuperMarket_ad0068ConnectionString1" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SuperMarket_ad0068ConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SuperMarket_ad0068ConnectionString2 (Settings)" PropertyReference="ApplicationSettings.SuperMarket_ad0068.Properties.Settings.GlobalReference.Default.SuperMarket_ad0068ConnectionString2" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Cleaning_MaterialsTableAdapter" GeneratorDataComponentClassName="Cleaning_MaterialsTableAdapter" Name="Cleaning_Materials" UserDataComponentName="Cleaning_MaterialsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SuperMarket_ad0068ConnectionString1 (Settings)" DbObjectName="Cleaning_Materials" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SuperMarket_ad0068ConnectionString2 (Settings)" DbObjectName="Cleaning_Materials" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Cleaning_Materials` WHERE ((`ID` = ?) AND ((? = 1 AND `Cleaning_Materials` IS NULL) OR (`Cleaning_Materials` = ?)))</CommandText>
@@ -55,7 +55,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Cooking_and_BakingTableAdapter" GeneratorDataComponentClassName="Cooking_and_BakingTableAdapter" Name="Cooking_and_Baking" UserDataComponentName="Cooking_and_BakingTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SuperMarket_ad0068ConnectionString1 (Settings)" DbObjectName="Cooking_and_Baking" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SuperMarket_ad0068ConnectionString2 (Settings)" DbObjectName="Cooking_and_Baking" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Cooking_and_Baking` WHERE ((`ID` = ?) AND ((? = 1 AND `Cooking_and_Baking` IS NULL) OR (`Cooking_and_Baking` = ?)))</CommandText>
@@ -101,7 +101,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Dairy_ProductsTableAdapter" GeneratorDataComponentClassName="Dairy_ProductsTableAdapter" Name="Dairy_Products" UserDataComponentName="Dairy_ProductsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SuperMarket_ad0068ConnectionString1 (Settings)" DbObjectName="Dairy_Products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SuperMarket_ad0068ConnectionString2 (Settings)" DbObjectName="Dairy_Products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `Dairy_Products` WHERE ((`ID` = ?) AND ((? = 1 AND `Dairy_Products` IS NULL) OR (`Dairy_Products` = ?)))</CommandText>

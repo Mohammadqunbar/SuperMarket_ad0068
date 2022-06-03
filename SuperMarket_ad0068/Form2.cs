@@ -44,7 +44,7 @@ namespace SuperMarket_ad0068
 
         }
         string database = "Provider=Microsoft.ACE.OLEDB.12.0; " +
-                "Data Source =C:\\Users\\SCHOOL\\Desktop\\mohammed alqunbor\\SuperMarket_ad0068\\SuperMarket_ad0068\\database\\SuperMarket_ad0068.accdb";
+                "Data Source = SuperMarket_ad0068.accdb";
         void fill_ListBox()
         {
             try
